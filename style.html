@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Manipulation</title>
+    <style>
+        .big {
+            font-size: 100px;
+            color: orangered;
+            border: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Style manipulation in Javascript</h1>
+
+    <p>J.Cole is the <strong>greatest</strong></p>
+    <ul>
+        <li>Forest Hill Drive</li>
+        <li>KOD</li>
+        <li>4 Your Eyez Only</li>
+    </ul>
+
+    <!--Manipulating textContent
+        var p = document.getElementsByTagName("p")[0]
+
+    p
+    <p class=​"big">​…​</p>​
+    p.textContent
+    "J.Cole is the greatest"
+    var ul = document.querySelector("ul");
+
+    ul
+    <ul>​…​</ul>​
+    ul.textContent
+    "
+        Forest Hill Drive
+        KOD
+        4 Your Eyez Only
+    "
+    p.textContent = "I love J.Cole"
+    "I love J.Cole"
+    -->
+
+    <!--Select-->
+    <!--var tag = document.getElementById("highlight");
+    //To manipulate the following below
+    tag.style.color = "blue";
+    tag.style.border = "10px solid red";
+    tag.style.fontSize = "70px";
+    tag.style.background = "yellow";
+    tag.style.marginTop = "200px"; -->
+
+    <img src="/Img/1rWXdJ1s_400x400.jpg" alt="J cole">
+    <!--How it is typed in the browser below-->
+    <script>
+    var h1 = document.querySelector("h1");
+
+    h1.style.color = "red"
+    "red"
+    h1.style.border = "10px solid yellow";
+    "10px solid yellow"
+    //selecting the "p" element
+    var p = document.querySelector("p")
+
+    p
+    //<p>​…​</p>​"J.Cole is the "<strong>​greatest​</strong>​</p>​
+    p.classList
+    //DOMTokenList [value: ""]0: "big"length: 1value: "big"__proto__: DOMTokenList
+    p.classList.add("big")
+    //To remove the class
+   //p.classList.toggle("big");
+
+   var body = document.querySelector("body");
+       var isBlue = false;
+
+       setInterval(function(){
+        if (isBlue) {
+            body.style.background = "white";
+        } else {
+            body.style.background = "#643ba4";
+        }
+        isBlue = !isBlue;
+       }, 1000);
+    
+    </script>
+</body>
+</html>
